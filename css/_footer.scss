@@ -1,0 +1,114 @@
+.footer{
+    padding-top: 30px;
+    margin-top: 15px;
+    background-color: #000;
+    padding-bottom: 30px;
+    &-tittle{
+        font-size: 36px;
+        color: #ffc222;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $fontColor;
+    }
+    &-nav{
+
+        &__table{
+            font-size: 30px;
+            margin: 20px;
+            color: $headerContentColor;
+            list-style: none;
+        }
+        &__item{
+            font-size: 14px;
+            margin: 10px 0px;
+            text-align: center;
+            color: $fontColor;
+            &:nth-child(1){
+                padding-top: 25px;
+                border-top: 1px solid #ffc222;
+            }
+            a{
+                margin: 0 15px;
+                color: $headerContentColor;
+            }
+        }
+    
+        &__wrapper{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    &-numbers{
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-around;
+        .numbers{
+            font-size: 18px;
+            color: #ffc222;
+            a{
+                font-size: 22px;
+                color: $headerContentColor;
+            }
+        }
+    }
+    &-books{
+        &__wrapper{
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            
+            
+        }
+        .book{
+            transition: all .2s ease-in-out; 
+
+            &-img{
+                display: block;
+                height: 300px;
+                margin: 0 auto;
+                border: 3px solid #ffc222;
+                
+            }
+            &-text{
+                font-size: 16px;
+                margin: 20px 0;
+                text-align: center;
+            }
+            &:hover{ transform: scale(1.1); }
+        }
+        
+    }
+    &-info-items{
+        font-size: 16px;
+        margin: 10px 0;
+        a{
+            color: $headerContentColor;
+        }
+        
+    }
+}
+.time{
+    color: #ffc222;
+}
+.white{
+    a{
+        color: $headerContentColor;
+    }
+    color: $headerContentColor;
+    
+}
+.orange{
+    color: #ffc222;
+}
+.footer-info{
+    list-style: none;
+}
+
+.footer-info-items:nth-child(even){
+    a{
+        color: #ffc222
+    }
+    
+}
+.img-link{
+    display: block;
+}

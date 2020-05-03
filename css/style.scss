@@ -1,0 +1,38 @@
+@import "values";
+@import "mixin";
+@import "header";
+@import "main";
+@import "footer";
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    background-image: url('../img/bg-main.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include fonts;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,
+li{
+   
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+///////////////////////////////
+
+@include  headerLink;
+
