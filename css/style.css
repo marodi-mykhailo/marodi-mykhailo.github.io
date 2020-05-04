@@ -701,4 +701,9 @@ li {
   color: #fff;
   margin: 10px 0;
 }
+/*////////NO SCSS///////////*/
+.slick-slide:focus {
+  outline: none ;
+}
+
 /*# sourceMappingURL=style.css.map */
