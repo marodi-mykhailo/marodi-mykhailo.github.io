@@ -428,6 +428,7 @@
   width: 60%;
   background-color: #f87d09;
   margin: 0 auto;
+  padding: 0px 15px;
   border-radius: 20px;
 }
 
@@ -683,6 +684,7 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
+  outline: none;
 }
 
 ul,
@@ -701,9 +703,4 @@ li {
   color: #fff;
   margin: 10px 0;
 }
-/*////////NO SCSS///////////*/
-.slick-slide:focus {
-  outline: none ;
-}
-
 /*# sourceMappingURL=style.css.map */
