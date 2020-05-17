@@ -2,6 +2,10 @@
   background-color: #2d2d2d;
 }
 
+.header__top {
+  display: none;
+}
+
 .header-phone, .header-mail {
   line-height: 45px;
   letter-spacing: 0.25px;

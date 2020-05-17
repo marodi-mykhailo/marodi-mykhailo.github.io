@@ -1,8 +1,7 @@
 .header{
     background-color: $headerTopColor;
     &__top{
-        
-        
+       display: none;
     }
     &-phone, &-mail{
         line-height: 45px;
