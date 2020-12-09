@@ -1,15 +1,12 @@
 .main{
-    
     padding-top: 20px !important;
     padding-bottom: 30px;
+    display: flex;
 }
 .content-left{
     width: 50%;
-    
-    padding: 40px 0px;
-    float: left;
 
-    
+    padding: 40px 0px;    
     &__header{
         font-size: 32px;
         span{
@@ -57,15 +54,14 @@
 }
 .content-right{
     width: 50%;
-    
     padding-top: 40px;
-    float: right;
     &__wrapper{
         .main__video{
             float: right;
             margin-bottom: 20px;
             box-shadow:  5px 5px 30px 0px rgba(0,0,0,1);
             border-radius: 25px;
+            width: max-content;
             
             iframe{
                 display: block;
@@ -90,9 +86,6 @@
 .slider{
     width: 100%;
     
-   
-    
-
     &-wrapper{
         clear: both;
         width: 460px;
@@ -365,4 +358,93 @@
 }
 .big-wrapper{
     position: relative;
+}
+
+.content-right__wrapper .main__video iframe{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1207px){
+    .content-left__header{
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    .content-left__text{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .main{
+        flex-direction: column;
+    }
+    .content-left{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content-right{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-right__wrapper .main__video{
+        float: none;
+        margin: 0 auto 30px;
+        max-width: 100%;
+    }
+
+    .slider-wrapper {
+        margin: 0 auto 30px;
+    }
+    .footer-tittle{
+        line-height: 1.4;
+        margin: 10px 0;
+    }
+    .footer-nav__table{
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .content-right__wrapper .main__video iframe{
+        height: 200px;
+    }
+
+    .slider-wrapper{
+        max-width: 100%;
+    }
+
+    .header__text{
+        max-width: 100%;
+        font-size: 4rem;
+    }
+
+    .slider-box{
+        width: 80%;
+    }
+    .footer-nav__wrapper{
+    flex-direction: column;
+    }
+    
+    .footer-numbers{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+    .header__text{
+        font-size: 3rem;
+    }
+    .content-left__header{
+        text-align: center;
+    }
+    
+    .content-left__definition .definition-title{
+        text-align: center;
+        line-height: 1.4;
+    font-size: 22px;
+    }
 }
